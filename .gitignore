@@ -21,4 +21,4 @@ docs
 dist
 *.log
 .eslintcache
-
+.next
