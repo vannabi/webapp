@@ -1,7 +1,7 @@
 import { Button, Container, Grid, InputAdornment, makeStyles, TextField, Typography } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import { useRouter } from 'next/router';
-import { FC, useState } from 'react';
+import React, { FC, useState } from 'react';
 import { Header } from '../components/Header';
 
 const useStyles = makeStyles((theme) => ({
@@ -43,7 +43,6 @@ const Home: FC = () => {
       .map((e) => e.trim())
       .reverse()
       .join('/');
-    console.log(url);
     router.push('/' + url);
   };
 

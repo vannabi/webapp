@@ -1,6 +1,7 @@
 import { AppBar, IconButton, makeStyles, Toolbar, Typography } from '@material-ui/core';
 import MapIcon from '@material-ui/icons/Map';
-import { FC } from 'react';
+import Link from 'next/link';
+import React, { FC } from 'react';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,9 +21,11 @@ export const Header: FC = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" className={classes.title}>
-          Wanna Be
-        </Typography>
+        <Link href="/">
+          <Typography variant="h6" className={classes.title}>
+            Wanna Be
+          </Typography>
+        </Link>
         <IconButton aria-label="map" edge="end" color="inherit">
           <MapIcon fontSize="inherit" />
         </IconButton>
