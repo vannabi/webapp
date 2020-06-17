@@ -23,12 +23,12 @@ export const Header: FC = () => {
       <Toolbar>
         <Link href="/">
           <Typography variant="h6" className={classes.title}>
-            Wanna Be
+            Vanabi.in - Where Do You Want To Be? 
           </Typography>
         </Link>
-        <IconButton aria-label="map" edge="end" color="inherit">
+/*        <IconButton aria-label="map" edge="end" color="inherit">
           <MapIcon fontSize="inherit" />
-        </IconButton>
+        </IconButton> */
       </Toolbar>
     </AppBar>
   );
