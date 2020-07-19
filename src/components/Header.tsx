@@ -22,7 +22,7 @@ export const Header: FC = () => {
       <Toolbar>
         <Link href="/">
           <Typography variant="h6" className={classes.title}>
-            Vanabi.in - Where Do You Want To Be?
+            Vanabi.in – Where Do You Want To Be?
           </Typography>
         </Link>
       </Toolbar>

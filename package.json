@@ -14,6 +14,7 @@
     "clean": "rm -rf .next && rm -rf out",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
     "lint:fix": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
+    "test": "jest",
     "dev": "next src/",
     "build": "next build src/",
     "start": "next start src/",
@@ -35,42 +36,38 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.9.1",
     "clsx": "latest",
+    "firebase": "^7.16.1",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "firebase-admin": "^8.12.1",
     "firebase-functions": "^3.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@types/jest": "^25.2.3",
     "@types/node": "^14.0.5",
     "@types/react": "^16.9.35",
     "@typescript-eslint/eslint-plugin": "^3.0.1",
     "@typescript-eslint/parser": "^3.0.1",
-    "firebase-functions-test": "^0.2.1",
-    "firebase-tools": "^8.4.2",
     "commitizen": "^4.1.2",
     "coveralls": "^3.1.0",
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react": "^7.20.3",
+    "firebase-admin": "^8.12.1",
+    "firebase-functions-test": "^0.2.1",
+    "firebase-tools": "^8.6.0",
     "husky": "^4.2.5",
-    "jest": "^26.0.1",
-    "jest-config": "^26.0.1",
-    "lint-staged": "^10.2.6",
     "prettier": "^2.0.5",
-    "semantic-release": "^17.0.8",
+    "semantic-release": "^17.1.1",
     "typescript": "^3.9.3"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint && npm run test"
+      "pre-commit": "npm run lint"
     }
   },
   "config": {

@@ -42,6 +42,12 @@ It creates the default `.next` folder with all production resources ready to dep
 ## Deployment
 
 We don't have any staging or test server, so the deployment goes to production directly.
+We use Firebase for hosting and Google Analytics.
+
+### Auto Deployment
+
+We use Github Action to deploy a new version of project automatically once a PR or any changes are merged to `master` branch.
+There is no need to do it manually. Manual deployment should be treated as exceptional one.
 
 ### Manual Deployment
 

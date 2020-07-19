@@ -4,6 +4,7 @@ import Head from 'next/head';
 import PropTypes from 'prop-types';
 import React from 'react';
 import theme from '../foundation/theme';
+import { initFirebase } from '../services/firebase';
 
 export default function MyApp(props: any): any {
   const { Component, pageProps } = props;
@@ -13,6 +14,8 @@ export default function MyApp(props: any): any {
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
+
+    initFirebase();
   }, []);
 
   return (
