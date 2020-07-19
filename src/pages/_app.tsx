@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import theme from '../foundation/theme';
 
-export default function MyApp(props) {
+export default function MyApp(props: any): any {
   const { Component, pageProps } = props;
 
   React.useEffect(() => {
@@ -18,7 +18,7 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>Wannabi.in</title>
+        <title>Vannabi.in</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>

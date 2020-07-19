@@ -52,7 +52,7 @@ const Home: FC = () => {
       <div className={classes.imageContainer}>
         <img
           src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-          alt="wannabi.in"
+          alt="vannabi.in"
           className={classes.image}
         />
       </div>
